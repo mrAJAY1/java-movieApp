@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
 
@@ -22,4 +23,6 @@ public class Movies {
     private String trailerLink;
     private String poster;
     private List<String> genres;
+    @DocumentReference
+    private List<Reviews> reviews;
 }
