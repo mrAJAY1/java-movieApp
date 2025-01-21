@@ -1,4 +1,4 @@
-package mrajay1.online.movieApp;
+package mrajay1.online.movieApp.Movies;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
