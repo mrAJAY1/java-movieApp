@@ -15,4 +15,8 @@ public class Reviews {
     @Id
     private ObjectId _id;
     private String review;
+
+    public Reviews(String review) {
+        this.review = review;
+    }
 }
